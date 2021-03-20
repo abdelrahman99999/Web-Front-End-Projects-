@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="uygvfgajfcg7ue">
+        <title>MY form</title>
+        <style>
+            body{
+                background: #676767;
+            }
+            h1{
+                text-align: center;
+            }
+            fieldset{
+                width: 700px;
+                padding:20px;
+                background: #ddd;
+                border: 1px solid#eee;
+                margin:20px auto;
+            }
+            fieldset >*{
+                margin: 5px;;
+            }
+            legend{
+                background: #333;
+                color: white;
+            }
+
+        </style>
+        <script>
+            function Hello()
+            {
+                alert("Hello every body")
+            }
+        </script>
+    </head>
+    <body>
+        <h1 >My Form</h1>
+        <form name="abdo_form">
+            <fieldset >
+                <legend>personal info</legend>
+                <label>Uesername</label>
+                <input type="text" name="name">
+
+                <label>Password</label>
+                <input type="password" name="pass">
+
+                <label>Remember me</label>
+                <input type="checkbox" name="c_box">
+                <br>
+                <label>Your gender</label>
+                <select name="select">
+                    <option>male</option>
+                    <option>famale</option>
+                </select>
+                <br>
+                <label>which is your favourite browsers?</label><br>
+                <input type="radio" name="browser" value="1">Google Chrome<br>
+                <input type="radio" name="browser" value="2">Firefox<br>
+                <input type="radio" name="browser" value="3">Opera<br>
+            </fieldset>
+            <fieldset>
+                <legend>Work info</legend>
+                <label>experiance years</label>
+                <select>
+                    <optgroup label="Near yeas ">
+                        <option>1 year</option>
+                        <option selected> 2 year</option>
+                        <option> 3 year</option>
+                    </optgroup>
+                    <optgroup label="Far years">
+                        <option>10 year</option>
+                        <option>15 year</option>
+                        <option>20 year</option>
+                    </optgroup>
+                </select>
+                <br>
+                <label>Upload Your CV</label>
+                <input type="file" >
+            </fieldset>
+            <fieldset>
+                <legend>Opitions</legend>
+                <label>click to reset</label>
+                <input type="reset" value="back to defaults">
+                <br>
+                <label>click to submit</label>
+                <input type="submit" value="GOOOOOO">
+                <br>
+                <label>click to get alarm</label>
+                <input type="button" value="say hello" onclick="Hello()">
+                <br>
+            </fieldset>
+        </form>
+
+    </body>
+</html>
